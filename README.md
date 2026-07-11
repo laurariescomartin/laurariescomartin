@@ -167,5 +167,3 @@ JavaScript • Three.js
 - Driving License (Category B)
 
 ---
-
-> **Note:** Due to academic plagiarism regulations established by Universidad Pontificia de Salamanca, the repositories related to my Bachelor's Thesis (*CodexAssist*) will remain private until the official thesis defense. They will be made publicly available afterwards.
