@@ -1,169 +1,94 @@
 # Laura Riesco Martín
 
-**Computer Engineer | Software Engineering & Cybersecurity**
+**Software Engineer | Backend | AI-powered Applications**
 
-📍 Salamanca, Spain  
-📧 laurariessco@gmail.com  
-📱 +34 644 97 51 48  
-💼 LinkedIn: https://www.linkedin.com/in/laura-riesco-martin  
-💻 GitHub: https://github.com/laurariescomartin
+📍 Salamanca, Spain · Open to relocation
+📧 laurariessco@gmail.com
+💼 [LinkedIn](https://www.linkedin.com/in/laura-riesco-martin)
 
 ---
 
-# 👋 About Me
+## About Me
 
-Computer Engineer graduated from **Universidad Pontificia de Salamanca (UPSA)**, specialized in **Software Engineering**, with an academic exchange (SICUE) at the **University of Granada (UGR)**.
+Software Engineering graduate from the Universidad Pontificia de Salamanca (UPSA), with an academic exchange (SICUE) at the University of Granada (UGR).
 
-Throughout my degree, I have developed a strong foundation in software engineering, software architecture and full-stack web development, complemented by hands-on experience integrating Artificial Intelligence solutions using **Retrieval-Augmented Generation (RAG)**.
+I have hands-on experience building AI-powered applications with RAG and LLMs, secure full-stack web software, and 3D interactive engines. I like systems that are well-architected, modular, and secure by design.
 
-I am currently focused on building my professional career in **Cybersecurity**, with particular interest in **Secure Software Development**, **Application Security**, **Code Auditing**, and **Software Protection**. My objective is to continue expanding my knowledge through postgraduate studies while contributing to innovative and security-oriented software projects.
-
----
-
-# 🎓 Education
-
-## Bachelor's Degree in Computer Engineering
-**Universidad Pontificia de Salamanca (UPSA)**
-
-**Specialization:** Software Engineering
-
-2022 – 2026
-
-**Bachelor's Thesis Grade:** 9.2/10
+Currently looking for a Junior Software Engineer role where I can contribute and keep growing — particularly interested in backend development, AI integration, and application security.
 
 ---
 
-## SICUE National Academic Exchange Program
+## Featured Projects
 
-**University of Granada (UGR)**
+### [CodexAssist](https://github.com/laurariescomartin/codex-assist) — AI-Powered Code Assistant *(Bachelor's Thesis · 9.2/10)*
 
-Full academic year (2024 – 2025)
+A RAG platform that lets developers query their own codebase in natural language. LLM answers are grounded strictly in repository context, eliminating hallucinations.
 
-Academic mobility program focused on advanced software engineering subjects, maintaining equivalent academic performance throughout the exchange.
+**What I built:**
+- Code-aware chunking pipeline and semantic retrieval over ChromaDB (cosine similarity search)
+- RAG Triad evaluation (Context Relevance, Groundedness, Answer Relevance) to validate output quality
+- Modular architecture where the LLM and vector store are swappable without touching business logic
+- FastAPI backend with intelligent context filtering (strips deps, logs, config noise)
+- Full-stack deployment with Docker Compose
 
----
-
-# 🚀 Featured Projects
-
-## AI-Powered Knowledge Platform with RAG *(Bachelor's Thesis)*
-
-Designed and developed a modular web platform integrating conversational AI to retrieve technical software documentation.
-
-### Main Contributions
-
-- Designed and implemented a modular software architecture.
-- Developed backend services and content management functionalities.
-- Implemented a Retrieval-Augmented Generation (RAG) pipeline using Large Language Models.
-- Integrated vector databases for semantic document retrieval.
-- Containerized the application using Docker.
-- Applied Natural Language Processing (NLP) techniques to improve contextual information retrieval.
-
-**Technologies**
-
-Python • LangChain • ChromaDB • Docker • PostgreSQL • LLMs • RAG
+`Python` `FastAPI` `LangChain` `ChromaDB` `Docker` `Prompt Engineering`
 
 ---
 
-## Cinema Management Web Application
+### [Cinema Management Platform](https://github.com/laurariescomartin/catalogo-cine) — Secure Full-Stack Web App *(SICUE Exchange · UGR)*
 
-Developed a full-stack web application including authentication, authorization and role-based access control.
+Full-stack web application built through 5 incremental engineering phases, with a focus on security and access control.
 
-### Main Contributions
+**What I built:**
+- 5-level RBAC (anonymous → registered → moderator → manager → superuser), enforced server-side on every route
+- Security layer: XSS prevention via Twig strict auto-escaping, bcrypt password hashing, parameterised SQL queries against injection attacks
+- Async AJAX search engine with role-filtered queries — regular users see published content only; managers query full catalogue including drafts
+- Containerised with Docker Compose (Apache + MySQL services separated)
 
-- Backend and frontend development.
-- Business logic implementation.
-- Protected routes and secure navigation.
-- User and administrator role management.
-
----
-
-## 3D Chess Game
-
-Developed an interactive chess game as part of the Computer Graphics course at the University of Granada.
-
-### Main Contributions
-
-- Implemented game logic.
-- Developed 3D rendering using Three.js.
-- Created interactive board visualization and user interaction.
-
-**Technologies**
-
-JavaScript • Three.js
+`PHP` `Twig` `Vanilla JS` `AJAX` `MySQL` `Docker` `bcrypt` `RBAC`
 
 ---
 
-# 💻 Technical Skills
+### [ChefDrez](https://github.com/laurariescomartin/threejs-chess-engine) — 3D Interactive Chess Engine *(Computer Graphics · UGR)*
 
-## Programming Languages
+Browser-based 3D chess game with a culinary theme — pieces are kitchen utensils on a cutting board, rendered in WebGL.
 
-- Java
-- Python
-- JavaScript
-- C
-- C++
-- SQL
-- HTML5
-- CSS3
+**What I built:**
+- Strategy pattern for move validation: each piece type is a pluggable strategy, extensible without modifying the core engine
+- OOP class hierarchy where each piece is a `THREE.Object3D` with encapsulated animation logic
+- Capture animations synchronised with board state via Promises + TWEEN.js
+- Cinematic camera that auto-rotates to the active player using CatmullRom curves; dynamic lighting that responds to game events
 
----
-
-## Frameworks & Libraries
-
-- Spring Boot
-- Node.js
-- Three.js
-- Jinja2
-- LangChain
+`JavaScript ES6+` `Three.js` `TWEEN.js` `WebGL` `Raycasting`
 
 ---
 
-## Databases
+## Technical Skills
 
-- PostgreSQL
-- MySQL
-- ChromaDB
-
----
-
-## Tools & Platforms
-
-- Git
-- GitHub
-- Docker
-- Linux (Bash)
-- Maven
-- Postman
-- VMware
+| | |
+|---|---|
+| **Languages** | Python · JavaScript (ES6+) · PHP · Java · C/C++ · SQL · HTML5/CSS3 |
+| **Frameworks** | FastAPI · LangChain · Three.js · TWEEN.js · Twig · Spring Boot · Node.js |
+| **AI / ML** | RAG · LLMs · ChromaDB · NLP · Vector Databases · Embeddings · Prompt Engineering |
+| **Databases** | PostgreSQL · MySQL · ChromaDB |
+| **Tools** | Docker · Docker Compose · Git · Linux/Bash · Postman · Maven |
+| **Security** | XSS Mitigation · bcrypt · SQL Injection Prevention · RBAC · Secure Session Management |
+| **Practices** | REST APIs · OOP · Software Architecture · Agile/Scrum |
 
 ---
 
-## Software Engineering & Cybersecurity Concepts
+## Education
 
-- Software Engineering
-- Object-Oriented Programming (OOP)
-- Software Architecture
-- Requirements Engineering
-- Agile Methodologies (Scrum)
-- REST APIs
-- Retrieval-Augmented Generation (RAG)
-- Large Language Models (LLMs)
-- Natural Language Processing (NLP)
-- Secure Software Development
-- Application Security
+**BSc Computer Engineering** — Specialization in Software Engineering
+Universidad Pontificia de Salamanca (UPSA) · 2022–2026
+Thesis grade: 9.2/10 · Overall GPA: 7.47/10
+
+**SICUE National Academic Exchange**
+University of Granada (UGR) · 2024–2025 · Full academic year
 
 ---
 
-# 🌍 Languages
+## Languages
 
-- **Spanish:** Native
-- **English:** B1 (Cambridge English Qualification)
-- **French:** Intermediate
-
----
-
-# 🚗 Additional Information
-
-- Driving License (Category B)
-
----
+Spanish (Native) · English (Working Proficiency) · French (Basic)
+```
