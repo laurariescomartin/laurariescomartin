@@ -100,7 +100,7 @@ A browser-based chess experience that combines chess mechanics with a culinary t
 Universidad Pontificia de Salamanca (UPSA) · 2022–2026
 
 - Bachelor's thesis: **9.2/10**
-- Overall GPA: **7.9467/10**
+- Overall GPA: **7.467/10**
 
 **SICUE Academic Exchange**  
 University of Granada (UGR) · 2024–2025  
