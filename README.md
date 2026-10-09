@@ -1,94 +1,119 @@
 # Laura Riesco Martín
 
-**Software Engineer | Backend | AI-powered Applications**
+**Software Engineer | Backend Development | AI-Powered Applications**
 
-📍 Salamanca, Spain · Open to relocation
-📧 laurariessco@gmail.com
+📍 Salamanca, Spain · Open to relocation  
+📧 [laurariessco@gmail.com](mailto:laurariessco@gmail.com)  
 💼 [LinkedIn](https://www.linkedin.com/in/laura-riesco-martin)
 
 ---
 
 ## About Me
 
-Software Engineering graduate from the Universidad Pontificia de Salamanca (UPSA), with an academic exchange (SICUE) at the University of Granada (UGR).
+Software Engineering graduate from Universidad Pontificia de Salamanca (UPSA), with a year-long academic exchange at the University of Granada (UGR).
 
-I have hands-on experience building AI-powered applications with RAG and LLMs, secure full-stack web software, and 3D interactive engines. I like systems that are well-architected, modular, and secure by design.
+I build software across backend development, AI-powered applications, and secure web engineering. My projects include a Retrieval-Augmented Generation (RAG) assistant for codebase exploration, a web security analysis platform, a secure movie management application, and an interactive 3D chess engine.
 
-Currently looking for a Junior Software Engineer role where I can contribute and keep growing — particularly interested in backend development, AI integration, and application security.
+I'm particularly interested in **backend engineering, AI integration, and application security**, with a focus on modular architecture, maintainable code, and security-conscious development.
+
+Currently looking for a Junior Software Engineer opportunity where I can contribute to real-world projects and continue growing as an engineer.
 
 ---
 
 ## Featured Projects
 
-### [CodexAssist](https://github.com/laurariescomartin/codex-assist) — AI-Powered Code Assistant *(Bachelor's Thesis · 9.2/10)*
+### [CodexAssist](https://github.com/laurariescomartin/codex-assist) — AI-Powered Code Assistant
 
-A RAG platform that lets developers query their own codebase in natural language. LLM answers are grounded strictly in repository context, eliminating hallucinations.
+*Bachelor's Thesis · 9.2/10*
 
-**What I built:**
-- Code-aware chunking pipeline and semantic retrieval over ChromaDB (cosine similarity search)
-- RAG Triad evaluation (Context Relevance, Groundedness, Answer Relevance) to validate output quality
-- Modular architecture where the LLM and vector store are swappable without touching business logic
-- FastAPI backend with intelligent context filtering (strips deps, logs, config noise)
-- Full-stack deployment with Docker Compose
+An AI-powered application that helps developers explore and understand codebases through natural-language questions using Retrieval-Augmented Generation (RAG).
 
-`Python` `FastAPI` `LangChain` `ChromaDB` `Docker` `Prompt Engineering`
+**Key contributions:**
+- Code ingestion and chunking pipeline for preparing source files for semantic retrieval.
+- Vector-based retrieval using ChromaDB to find relevant code context.
+- RAG workflow designed to ground LLM-generated explanations in retrieved source code.
+- Modular architecture separating ingestion, retrieval, and response generation.
+- FastAPI backend and Docker-based deployment.
 
----
+`Python` `FastAPI` `LangChain` `ChromaDB` `OpenAI` `RAG` `Docker`
 
-### [Cinema Management Platform](https://github.com/laurariescomartin/catalogo-cine) — Secure Full-Stack Web App *(SICUE Exchange · UGR)*
+### [CyberSentinel](https://github.com/laurariescomartin/ciber) — Web Security Analysis Platform
 
-Full-stack web application built through 5 incremental engineering phases, with a focus on security and access control.
+A defensive web security analysis platform designed to identify common web configuration weaknesses and explain findings through an AI-powered assistant.
 
-**What I built:**
-- 5-level RBAC (anonymous → registered → moderator → manager → superuser), enforced server-side on every route
-- Security layer: XSS prevention via Twig strict auto-escaping, bcrypt password hashing, parameterised SQL queries against injection attacks
-- Async AJAX search engine with role-filtered queries — regular users see published content only; managers query full catalogue including drafts
-- Containerised with Docker Compose (Apache + MySQL services separated)
+**Key contributions:**
+- Automated checks for security headers, cookie attributes, HTTPS configuration, information disclosure, and form security.
+- Explainable risk scoring based on likelihood and impact.
+- PostgreSQL persistence for scan history and findings.
+- RAG-based Security Assistant using a security knowledge base.
+- Containerization and automated testing with Pytest.
 
-`PHP` `Twig` `Vanilla JS` `AJAX` `MySQL` `Docker` `bcrypt` `RBAC`
+`Python` `FastAPI` `HTTPX` `PostgreSQL` `ChromaDB` `OpenAI` `Docker` `Pytest`
 
----
+### [Cinema Management Platform](https://github.com/laurariescomartin/catalogo-cine) — Secure Full-Stack Web Application
 
-### [ChefDrez](https://github.com/laurariescomartin/threejs-chess-engine) — 3D Interactive Chess Engine *(Computer Graphics · UGR)*
+A database-driven movie catalog developed during my academic exchange at the University of Granada, with an emphasis on access control and secure web development.
 
-Browser-based 3D chess game with a culinary theme — pieces are kitchen utensils on a cutting board, rendered in WebGL.
+**Key contributions:**
+- Role-based access control for different user roles, enforced on the server.
+- Password hashing with bcrypt.
+- XSS mitigation through Twig output escaping.
+- Parameterized SQL queries and server-side input validation.
+- AJAX search with role-dependent visibility for published and unpublished movies.
+- Containerized development environment using Docker Compose.
 
-**What I built:**
-- Strategy pattern for move validation: each piece type is a pluggable strategy, extensible without modifying the core engine
-- OOP class hierarchy where each piece is a `THREE.Object3D` with encapsulated animation logic
-- Capture animations synchronised with board state via Promises + TWEEN.js
-- Cinematic camera that auto-rotates to the active player using CatmullRom curves; dynamic lighting that responds to game events
+`PHP` `Twig` `JavaScript` `AJAX` `MySQL` `Docker` `RBAC`
 
-`JavaScript ES6+` `Three.js` `TWEEN.js` `WebGL` `Raycasting`
+### [ChefDrez](https://github.com/laurariescomartin/threejs-chess-engine) — Interactive 3D Chess Engine
+
+A browser-based chess experience that combines chess mechanics with a culinary theme, rendering kitchen-inspired pieces in an interactive 3D environment.
+
+**Key contributions:**
+- Modular chess logic using object-oriented design and the Strategy Pattern.
+- 3D scene and piece management with Three.js.
+- Asynchronous capture animations coordinated with Promises.
+- Interactive object selection using raycasting.
+- Animated camera transitions and dynamic lighting.
+
+`JavaScript ES6+` `Three.js` `WebGL` `TWEEN.js` `OOP` `Design Patterns`
 
 ---
 
 ## Technical Skills
 
-| | |
+| Category | Technologies |
 |---|---|
-| **Languages** | Python · JavaScript (ES6+) · PHP · Java · C/C++ · SQL · HTML5/CSS3 |
-| **Frameworks** | FastAPI · LangChain · Three.js · TWEEN.js · Twig · Spring Boot · Node.js |
-| **AI / ML** | RAG · LLMs · ChromaDB · NLP · Vector Databases · Embeddings · Prompt Engineering |
-| **Databases** | PostgreSQL · MySQL · ChromaDB |
-| **Tools** | Docker · Docker Compose · Git · Linux/Bash · Postman · Maven |
-| **Security** | XSS Mitigation · bcrypt · SQL Injection Prevention · RBAC · Secure Session Management |
-| **Practices** | REST APIs · OOP · Software Architecture · Agile/Scrum |
+| **Languages** | Python, JavaScript (ES6+), PHP, Java, C/C++, SQL |
+| **Backend** | FastAPI, REST APIs, SQLAlchemy, Spring Boot |
+| **AI & Retrieval** | RAG, LLM integration, LangChain, ChromaDB, embeddings, semantic search |
+| **Frontend & 3D** | HTML5, CSS3, Vanilla JavaScript, Three.js, Twig |
+| **Databases** | PostgreSQL, MySQL, SQLite, ChromaDB |
+| **Security** | XSS mitigation, bcrypt, SQL injection prevention, RBAC, secure session management |
+| **DevOps & Tools** | Docker, Docker Compose, Git, Linux, Bash, Postman, Maven |
+| **Engineering Practices** | OOP, modular architecture, design patterns, automated testing, Agile/Scrum |
 
 ---
 
 ## Education
 
-**BSc Computer Engineering** — Specialization in Software Engineering
+**BSc in Computer Engineering — Specialization in Software Engineering**  
 Universidad Pontificia de Salamanca (UPSA) · 2022–2026
-Thesis grade: 9.2/10 · Overall GPA: 7.47/10
 
-**SICUE National Academic Exchange**
-University of Granada (UGR) · 2024–2025 · Full academic year
+- Bachelor's thesis: **9.2/10**
+- Overall GPA: **7.9467/10**
+
+**SICUE Academic Exchange**  
+University of Granada (UGR) · 2024–2025  
+Full academic year
 
 ---
 
 ## Languages
 
-Spanish (Native) · English (Working Proficiency) · French (Basic)
-```
+- **Spanish:** Native
+- **English:** B1 (Cambridge certified) · Currently preparing for B2
+- **French:** Basic
+
+---
+
+I'm always interested in opportunities to build useful software, solve engineering problems, and learn from collaborative development teams.
